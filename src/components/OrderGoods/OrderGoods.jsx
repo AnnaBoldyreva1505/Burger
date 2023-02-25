@@ -8,7 +8,7 @@ export const OrderGoods = () => {
 
 
     return (
-        <li className={style.item}>
+        <li className={style.item} >
         <img
           className={style.image}
           src="../../assets/img/burger_1.jpg"

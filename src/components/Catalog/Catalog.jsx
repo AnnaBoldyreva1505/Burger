@@ -6,15 +6,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { productRequestAsync } from "../../store/product/productSlice.js";
 
-// const goodsList = [
-//   { title: 'Мясная бомба' },
-//   { title: 'Супер сырный' },
-//   { title: 'Сытный' },
-//   { title: 'Итальянский' },
-//   { title: 'Вечная классика' },
-//   { title: 'Тяжелый удар' },
-// ];
-
 export const Catalog = () => {
   const { products } = useSelector(state => state.product);
 
@@ -37,8 +28,8 @@ export const Catalog = () => {
           <div className={style.wrap_list}>
             <ul className={style.list}>
               {products.map((item) => (
-                <li className={style.item} key={item.title}>
-                  <CatalogProduct title={item.title} />
+                <li key={item.id} className={style.item}>
+                  <CatalogProduct item={item} />
                 </li>
               ))}
             </ul>

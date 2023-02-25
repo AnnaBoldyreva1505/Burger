@@ -18,7 +18,7 @@ export const productRequestAsync = createAsyncThunk(
 const productSlice = createSlice({
   name: "product",
   initialState,
-  extraReducer: (builder) => {
+  extraReducers: (builder) => {
     builder.addCase(productRequestAsync.pending, state =>{
         state.error = ''
     })
