@@ -93,6 +93,14 @@
     color: #FFFFFF;
     margin-bottom: 8px;
   }
+
+  .submit:disabled {
+    background: #f2f2f3;
+    color: #000;
+    opacity: 0.5;
+    cursor: no-drop;
+  }
+
   
   .apeal {
     display: flex;
@@ -185,6 +193,8 @@
       font-size: 16px;
       margin-bottom: 8px;
     }
+
+
   
     .apeal {
       font-size: 12px;

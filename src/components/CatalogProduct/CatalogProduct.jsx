@@ -17,7 +17,7 @@ const dispatch = useDispatch()
         />
 
         <p className={style.price}>
-          {item.price}<span className="currency">₽</span>
+          {item.price}<span className="currency"> ₽</span>
         </p>
 
         <h3 className={style.title}>
